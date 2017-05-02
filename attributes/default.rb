@@ -84,12 +84,12 @@ when 'ubuntu'
     default['postgresql']['server']['packages'] = ['postgresql-9.1']
     default['postgresql']['contrib']['packages'] = ['postgresql-contrib-9.1']
   elsif node['platform_version'].to_f <= 14.04
-    default['postgresql']['version'] = '9.3'
-    default['postgresql']['dir'] = '/etc/postgresql/9.3/main'
+    default['postgresql']['version'] = '9.4'
+    default['postgresql']['dir'] = '/etc/postgresql/9.4/main'
     default['postgresql']['server']['service_name'] = 'postgresql'
-    default['postgresql']['client']['packages'] = ['postgresql-client-9.3', 'libpq-dev']
-    default['postgresql']['server']['packages'] = ['postgresql-9.3']
-    default['postgresql']['contrib']['packages'] = ['postgresql-contrib-9.3']
+    default['postgresql']['client']['packages'] = ['postgresql-client-9.4', 'libpq-dev']
+    default['postgresql']['server']['packages'] = ['postgresql-9.4']
+    default['postgresql']['contrib']['packages'] = ['postgresql-contrib-9.4']
   elsif node['platform_version'].to_f <= 15.10
     default['postgresql']['version'] = '9.4'
     default['postgresql']['dir'] = '/etc/postgresql/9.4/main'
